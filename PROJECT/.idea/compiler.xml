@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CarRental" />
+        <module name="CarFleet" />
+        <module name="RestClient (1)" />
+        <module name="RestClient (2)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RestClient" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CarFleet" options="-parameters" />
+      <module name="CarRental" options="-parameters" />
+      <module name="RestClient (1)" options="-parameters" />
+      <module name="RestClient (2)" options="-parameters" />
+    </option>
+  </component>
+</project>

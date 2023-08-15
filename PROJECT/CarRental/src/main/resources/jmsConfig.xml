@@ -1,0 +1,7 @@
+<bean id="jmsConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+    <property name="brokerURL" value="tcp://localhost:61616" />
+</bean>
+
+<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+<property name="connectionFactory" ref="jmsConnectionFactory" />
+</bean>
